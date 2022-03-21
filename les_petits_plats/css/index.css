@@ -1,0 +1,114 @@
+:root{
+    --primary-color:#D04F4F;
+    --border-color:#E7E7E7;
+    --ingredients-color:#3282f7;
+    --appliance-color:#68d9a4;
+    --ustensils-color:#ed6454;
+}
+
+.headerColor{
+  color:var(--primary-color);
+}
+input.inputGroupBorder{
+    background: #e7e7e7;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 0.75rem;
+}
+button.buttonGroupBorder{
+    background: #e7e7e7;
+    border-radius: 0 5px 5px 0;
+    padding: 0.75rem;
+}
+span.inputDropdownIngredient,input.inputDropdownIngredient,input.inputDropdownIngredient::placeholder,
+span.inputDropdownAppliance,input.inputDropdownAppliance,span.inputDropdownUstensils,input.inputDropdownUstensils
+{
+    background-color: var(--ingredients-color);
+    border: none;
+    color: white;
+    padding: 16px 20px 16px 10px;
+}
+input.inputDropdownIngredient:focus{
+background-color: var(--ingredients-color);
+color: white;
+padding: 16px 20px 16px 10px;
+}
+span.inputDropdownAppliance,input.inputDropdownAppliance,
+input.inputDropdownAppliance:focus,input.inputDropdownAppliance:focus,input.inputDropdownAppliance::placeholder
+{
+    background-color: var(--appliance-color)!important;
+    color: white;
+
+}
+span.inputDropdownUstensils,input.inputDropdownUstensils,
+input.inputDropdownUstensils:focus,input.inputDropdownUstensils:focus,input.inputDropdownUstensils::placeholder
+{
+    background-color: var(--ustensils-color)!important;
+    color: white;
+
+}
+.applianceBg{
+    background-color: var(--appliance-color)!important;
+}
+.ingredientsBg{
+    background-color: var(--ingredients-color);
+}
+.ustensilsBg{
+    background-color: var(--ustensils-color);
+}
+.foodList{
+    columns: 4;
+    column-count: 4;
+    /* background-color: var(--ingredients-color); */
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 55px;
+    z-index: 999;
+    width: max-content;
+
+}
+.foodList li{   
+    list-style-type: none;
+    padding: 0!important;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    line-height: 2;
+}
+
+.obj-fit{
+    object-fit: contain;
+}
+.recipeDetails{
+    font-size: 10px;
+}
+.recipeNames{
+    font-size: 12px;
+}
+.contentHeight {
+    height: 376px;
+    overflow: hidden;
+}
+/* .dropDownIngredient,.dropDownAppliance{
+    padding: 0px 10px;
+} */
+.selectedItems {    
+    display: inline-block;
+    padding: 12px 23px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+li.ingredientItem,li.applianceItem ,li.ustensilsItem{
+    padding: 21px 1px;
+}
+.disableItem{
+    pointer-events: none;
+    cursor: default;
+}
+.displayItemNone{
+    display: none;
+}
